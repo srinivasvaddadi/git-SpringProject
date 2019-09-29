@@ -1,0 +1,18 @@
+package com.example.demo.departments;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DepartmentController {
+	
+	@Autowired
+	private DepartmentService departmentService;
+	
+	public List<Departments> getAllDepts() {
+		return departmentService.getAllDepartments();
+	}
+
+}

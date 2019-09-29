@@ -1,0 +1,50 @@
+package com.example.demo.departments;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Departments {
+
+	@Id
+	private String id;
+	private String dept;
+	private String description;
+	
+	public Departments() {
+		
+	}
+
+
+	public Departments(String id, String dept, String description) {
+		super();
+		this.id = id;
+		this.dept = "hey";
+		this.description = description;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getDept() {
+		return dept;
+	}
+
+	public void setDept(String dept) {
+		dept = dept;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		description = description;
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.example.demo.hello;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DepartmentService {
+	
+	
+	private List<Department> depts = Arrays.asList(
+			
+			new Department("CSE"),
+			new Department("ECE"),
+			new Department("ECE"),
+			new Department("ECE"),
+			new Department("ECE"));
+	
+			
+			
+			
+			
+			
+			
+	
+   List<Department> getAllDepartments(){
+		return depts;
+	}
+	
+		
+
+}

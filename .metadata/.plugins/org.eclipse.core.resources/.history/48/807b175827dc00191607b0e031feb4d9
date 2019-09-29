@@ -1,0 +1,20 @@
+package com.example.entity1;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Departments {
+	
+	@Id
+	private String CSE;
+	private String ECE;
+	private String EEE;
+	private String CIVIL;
+	private String MECH;
+
+	
+	
+	
+	
+}

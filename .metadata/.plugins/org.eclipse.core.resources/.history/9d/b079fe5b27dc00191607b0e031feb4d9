@@ -1,0 +1,27 @@
+package com.example.entity1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Service
+public class DepartmentsService {
+	
+	@Autowired
+	private DepartmentRepo departmentRepo;
+	
+	@RequestMapping("/departments")
+	public List<Departments> getAllDepartments(){
+		List<Departments> Depts = new ArrayList<>();
+		departmentRepo.findAll();
+		return Depts;
+	}
+	public void addDepartment(Departments department) {
+		departmentRepo.save(department);
+	}
+	
+
+}

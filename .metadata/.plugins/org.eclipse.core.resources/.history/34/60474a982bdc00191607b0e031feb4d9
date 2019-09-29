@@ -1,0 +1,11 @@
+package com.example.demo.hello;
+
+public class Topic {
+	
+	private String CSE;
+	private String ECE;
+	private String EEE;
+	private String CIVIL;
+	private String MECH;
+
+}
